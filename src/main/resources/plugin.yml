@@ -1,0 +1,22 @@
+name: Vertebrae
+version: 1.0.0
+main: me.matt.vertebrae.VertebraePlugin
+author: Matt
+description: A Bukkit/Spigot plugin for data synchronization and Redis integration.
+
+commands:
+  data:
+    description: View all the data metrics logged in the local database
+    usage: /data
+    permission: vertebraplug.data
+  flush:
+    description: Flush all the data metrics logged in the local database
+    usage: /data
+    permission: vertebraplug.flush
+permissions:
+  vertebrae.data:
+    description: Permission to use the data command
+    default: op
+  vertebrae.flush:
+    description: Permission to use the flush command
+    default: op
