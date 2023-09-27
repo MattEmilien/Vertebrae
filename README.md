@@ -24,7 +24,7 @@ The Vertebrae Minecraft Plugin is a feature-packed utility that enhances your Mi
 
 ## Installation 🚀
 
-1. Download the latest release from the [Releases](https://github.com/your-username/your-plugin/releases) page.
+1. Download the latest release from the [Releases](https://github.com/MattEmilien/Vertebrae/releases) page.
 
 2. Place the JAR file in your server's `plugins` directory.
 
@@ -40,7 +40,7 @@ The Vertebrae Minecraft Plugin is a feature-packed utility that enhances your Mi
 
 ## Monitored Statistics 📈
 
-The Vertebrae Minecraft Plugin provides comprehensive monitoring of various server statistics, giving you valuable insights into your Minecraft server's performance and player activity. Here are the key statistics that we monitor:
+The Vertebrae Minecraft Plugin provides comprehensive monitoring of various server statistics, giving you valuable insights into your Minecraft server's performance and player activity. Here are the key statistics that are being monitored:
 
 - **Player Count**: Current number of players on the server.
 - **Maximum Players**: Maximum player capacity of the server.
