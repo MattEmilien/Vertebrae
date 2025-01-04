@@ -1,5 +1,6 @@
 package me.matt.vertebrae
 
+import me.matt.vertebrae.commands.CommandManager
 import me.matt.vertebrae.config.PluginConfig
 import me.matt.vertebrae.managers.DataManager
 import me.matt.vertebrae.managers.RedisManager
@@ -11,7 +12,7 @@ enum class Vertebrae {
     private var pluginConfig: PluginConfig? = null
     private var redisManager: RedisManager? = null
     private var dataManager: DataManager? = null
-
+    private lateinit var commandManager: CommandManager
     fun initialize(plugin: VertebraePlugin) {
         this.plugin = plugin
     }
@@ -26,6 +27,7 @@ enum class Vertebrae {
     }
 
     fun stop() {
+
     }
 
     private fun registerCommands() {
@@ -36,7 +38,8 @@ enum class Vertebrae {
 
     private fun registerManagers() {
         redisManager = RedisManager
-        dataManager = DataManager
+        commandManager = CommandManager(VertebraePlugin())
+        dataManager = DataManager(pluginConfig!!, redisManager!!)
     }
 
     private fun configure() {
